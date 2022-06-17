@@ -61,19 +61,17 @@ while True:
 a = 1
 b = 1
 fibo = 1
-cont = 1
 x = 0
 while fibo <= n:
 	# print(fibo)
 	if fibo == n:
-		print(f'\n{n} is the {cont}th term of Fibonacci sequence.\n')
+		print(f'\n{n} belongs to the Fibonacci sequence.\n')
 		x = 1
 		break
 	fibo = a + b
 	# print(fibo)
 	a = b
 	b = fibo
-	cont += 1
 
 if x == 0:
 	print(f'\n{n} does not belong to the Fibonacci sequence.')
@@ -111,10 +109,19 @@ b) Considerar 2 pedágios como obstáculo e que o caminhão leva 5 minutos a mai
 
 c) Explique como chegou no resultado.
 
-R: A questão 4 está mal definida pois é possível interpreta-lá de três formas em relação ao posicinamento dos pedágios na estrada.
-Caso os pedágios estiverem mais próximos de Ribeirão Preto, apenas o carro irá percorrê-los antes de se  cruzarem, caso os pedagios
- estiverem mais próximos de Franca, apenas o Caminhão irá percorrê-los antes de se cruzarem. Caso estiverem bem distribuídos, 
- o caminhão passará por um e o carro por outro. s
+R: Ambos estarão a 57,9 km de Ribeirão Preto pois ao se encontrarem ambos estarão no mesmo ponto com a mesma distância até Ribeirão Preto. Pela fórmula da velocidade média temos:
+
+V1 = S1 / t e V2 = S2 / t, logo, t = S1 / V1 = S2 / V2 e S2 = 100 - S1
+
+substituindo os valores na fórmula:
+
+S1 / 110 = (100 - 21) / 80
+80S1 = 110(100 - S1)
+80(S1) = 11000 - 110S1
+190S1 = 11000
+S1 ≃ 57,9 KM
+
+
 
 
 5) Escreva um programa que inverta os caracteres de um string.
